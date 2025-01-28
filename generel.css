@@ -1,0 +1,48 @@
+@font-face {
+  font-family: montserrat;
+  src: url(font/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: petit;
+  src: url(font/PetitFormalScript-Regular.ttf);
+}
+body {
+  background-color: #f2efe4;
+  text-align: center;
+}
+h2 {
+  color: #402d1c;
+  font-family: montserrat;
+}
+h1 {
+  font-family: petit;
+  font-size: 3em;
+  color: #402d1c;
+}
+#omvendt_r {
+  color: #497cbf;
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: #402d1c;
+}
+a:link {
+  text-decoration: none;
+}
+ul li {
+  border: solid #497cbf;
+  border-radius: 1em;
+  width: 10rem;
+  background-color: #497cbf;
+  margin-bottom: 1rem;
+}
