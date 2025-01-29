@@ -58,9 +58,14 @@ ul li {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
 }
+.grid_articals article {
+  display: grid;
+  grid-template-columns: subgrid;
+}
 .grid_articals img {
   max-width: 80%;
 }
+
 .leggings,
 .tee,
 .bag,
