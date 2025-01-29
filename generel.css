@@ -19,6 +19,12 @@ h1 {
   font-size: 3em;
   color: #402d1c;
 }
+h3,
+h4,
+h5 {
+  font-family: montserrat;
+}
+
 #omvendt_r {
   color: #497cbf;
   display: inline-block;
@@ -45,4 +51,19 @@ ul li {
   width: 10rem;
   background-color: #497cbf;
   margin-bottom: 1rem;
+}
+
+.grid_articals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.grid_articals img {
+  max-width: 80%;
+}
+.leggings,
+.tee,
+.bag,
+.jacket {
+  text-align: left;
 }
