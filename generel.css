@@ -15,7 +15,8 @@ h2,
 h3,
 h4,
 h5,
-footer {
+footer,
+p {
   color: #402d1c;
   font-family: montserrat;
 }
@@ -69,6 +70,15 @@ ul li {
 .leggings,
 .tee,
 .bag,
-.jacket {
+.jacket,
+.leggings_produkt,
+p {
   text-align: left;
+}
+.produkt_billede img {
+  max-width: 70%;
+}
+.grid_main {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
