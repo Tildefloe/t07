@@ -16,7 +16,8 @@ h3,
 h4,
 h5,
 footer,
-p {
+p,
+label {
   color: #402d1c;
   font-family: montserrat;
 }
@@ -80,5 +81,43 @@ p {
 }
 .grid_main {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+/* Tilføj til kurv funktion */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.tilfoj_til_kurv {
+  width: 100%;
+  padding: 10px;
+  background-color: #497cbf;
+  color: #f2efe4;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.tilfoj_til_kurv:hover {
+  background-color: #402d1c;
+}
+
+@media (width > 750px) {
+  .grid_kategorier {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .grid_kategorier li {
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+  .grid_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 2%;
+  }
 }
