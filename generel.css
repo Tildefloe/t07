@@ -10,7 +10,12 @@ body {
   background-color: #f2efe4;
   text-align: center;
 }
-h2 {
+
+h2,
+h3,
+h4,
+h5,
+footer {
   color: #402d1c;
   font-family: montserrat;
 }
@@ -18,11 +23,6 @@ h1 {
   font-family: petit;
   font-size: 3em;
   color: #402d1c;
-}
-h3,
-h4,
-h5 {
-  font-family: montserrat;
 }
 
 #omvendt_r {
