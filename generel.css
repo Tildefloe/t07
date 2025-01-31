@@ -85,7 +85,7 @@ p {
 }
 .grid_text {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 /* Tilføj til kurv funktion */
 select {
@@ -119,9 +119,8 @@ select {
     display: grid;
     grid-template-columns: subgrid;
   }
-  .grid_main {
+  .produkt_billede {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-right: 2%;
   }
 }
