@@ -83,6 +83,10 @@ p {
   display: grid;
   grid-template-rows: 1fr;
 }
+.grid_text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 /* Tilføj til kurv funktion */
 select {
   width: 100%;
