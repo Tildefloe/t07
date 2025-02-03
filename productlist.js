@@ -1,5 +1,3 @@
-console.log("script hentet...");
-
 const listContainer = document.querySelector(".grid_articals");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/`)
