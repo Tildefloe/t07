@@ -10,12 +10,10 @@ fetch(`https://kea-alt-del.dk/t7/api/products?category=${category}`)
   .then((Response) => Response.json())
   .then((data) => showList(data));
 
-function showList(products) {
-  console.log(products);
-  let markup = "";
-  products
-    .map((product) => {
-      markup += ` 
+function showList(data) {
+  const markup = data
+    .map(
+      (product) => ` 
           
       <article class="leggings">
       <a href="product.html?id=${product.id}">
@@ -26,8 +24,9 @@ function showList(products) {
             <h3 class="productdisplayname">${product.productdisplayname}</h3>
             <h5>DKK ${product.price},-</h5>
             </a>
-          </article>`;
-    })
+          </article>
+          `
+    )
     .join("");
   listContainer.innerHTML = markup;
 }
