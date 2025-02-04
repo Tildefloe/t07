@@ -33,10 +33,6 @@ h1 {
   transform: scaleX(-1);
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -46,13 +42,6 @@ a {
 }
 a:link {
   text-decoration: none;
-}
-ul li {
-  border: solid #497cbf;
-  border-radius: 1em;
-  width: 10rem;
-  background-color: #497cbf;
-  margin-bottom: 1rem;
 }
 
 .grid_articals {
