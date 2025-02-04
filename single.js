@@ -1,10 +1,15 @@
 const produkt_billedeContainer = document.querySelector(".produkt_billede");
-const productId = 1535;
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const productId = urlParams.get("id");
+
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((Response) => Response.json())
   .then(showProduct);
 
 function showProduct(data) {
+  console.log(data);
   produkt_billedeContainer.innerHTML = `
    <div>
         <img

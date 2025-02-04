@@ -1,8 +1,12 @@
-console.log("script hentet...");
-
 const listContainer = document.querySelector(".grid_articals");
 
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=100`)
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const category = urlParams.get("category");
+
+console.log(category);
+
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${category}`)
   .then((Response) => Response.json())
   .then((data) => showList(data));
 
@@ -12,7 +16,7 @@ function showList(data) {
       (product) => ` 
           
       <article class="leggings">
-      <a href="product.html">
+      <a href="product.html?id=${product.id}">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp"
               alt="Billede af produkt"
