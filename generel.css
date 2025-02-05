@@ -39,6 +39,7 @@ ul {
 }
 a {
   color: #402d1c;
+  font-family: montserrat;
 }
 a:link {
   text-decoration: none;
@@ -57,7 +58,7 @@ a:link {
   max-width: 80%;
 }
 
-.leggings,
+.product_container,
 .tee,
 .bag,
 .jacket,
@@ -96,6 +97,34 @@ select {
 }
 .tilfoj_til_kurv:hover {
   background-color: #402d1c;
+}
+.grid_kategorier a {
+  border: solid #497cbf;
+  border-radius: 1rem;
+  background-color: #497cbf;
+}
+.discount_hidden {
+  visibility: hidden;
+  margin: 0;
+  border: solid red;
+}
+.discount {
+  visibility: visible;
+}
+.soldout_hidden {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.soldout {
+  visibility: visible;
+  margin: 0;
+  background-color: lightgray;
+  padding: 10px;
+}
+.product_container {
+  position: relative;
 }
 
 @media (width > 750px) {
