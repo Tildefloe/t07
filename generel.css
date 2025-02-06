@@ -10,6 +10,9 @@ body {
   background-color: #f2efe4;
   text-align: center;
 }
+footer {
+  margin-top: 350px;
+}
 
 h2,
 h3,
